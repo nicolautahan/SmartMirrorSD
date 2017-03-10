@@ -1,0 +1,22 @@
+Tópicos para estudo inicial:
+	- Python Bibliotecas:
+		- Tkinter *
+		- locale
+		- requests, json** (obter info de sites)
+		- traceback
+		- feedparser
+		- PIL (Imagens?)
+		- contextlib
+
+	- Classes:
+		- Frame (pyhton class)
+
+	- Git & Github
+
+	- API do Gmail ou Mail do proprio OS
+
+	- Linux para Rapsberry pi
+
+	- Limitaçoes do Rapsberry
+
+	- Viabilidade de comando de voz
