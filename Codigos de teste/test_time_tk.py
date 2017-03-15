@@ -9,7 +9,7 @@ import time
 
 fonte = 'Helvetica'
 large_text_size = 35
-refresh_rate = 200
+time_refresh_rate = 200
 
 class Relogio(Frame):
 	def __init__(self, root):
@@ -54,7 +54,7 @@ class Relogio(Frame):
 		self.dataLB.config(text = self.data)
 
 		# O metodo se chama apos 200ms para checar por mudancas
-		self.horaLB.after(refresh_rate, self.tick)
+		self.horaLB.after(time_refresh_rate, self.tick)
 
 
 
