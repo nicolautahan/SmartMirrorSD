@@ -9,6 +9,7 @@ import time
 
 fonte = 'Helvetica'
 large_text_size = 35
+refresh_rate = 200
 
 class Relogio(Frame):
 	def __init__(self, root):
@@ -35,7 +36,7 @@ class Relogio(Frame):
 	def tick(self):
 
 		# Receba as informacoes da hora, dia e data
-		self.hora2 = time.strftime('%H: %M')
+		self.hora2 = time.strftime('%H:%M')
 		self.dia_semana2 = time.strftime('%A, idiota..')
 		self.data2 = time.strftime('%d %b, %Y')
 
@@ -53,7 +54,7 @@ class Relogio(Frame):
 		self.dataLB.config(text = self.data)
 
 		# O metodo se chama apos 200ms para checar por mudancas
-		self.horaLB.after(200, self.tick)
+		self.horaLB.after(refresh_rate, self.tick)
 
 
 
