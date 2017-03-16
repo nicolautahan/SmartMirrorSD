@@ -45,8 +45,8 @@ class Titulo(Frame):
 	def __init__(self, root, noticia = ''):
 		Frame.__init__(self, bg= 'black')
 
-		self.titulo = noticia
-		self.noticiaLB = Label(root, text = self.titulo, font=(fonte, text_size), bg = 'black', fg = 'white')
+		self.titulo = noticia.rsplit('-', 1)
+		self.noticiaLB = Label(root, text = self.titulo[0], font=(fonte, text_size), bg = 'black', fg = 'white')
 		self.noticiaLB.pack(side = TOP, anchor = W)
 
 
