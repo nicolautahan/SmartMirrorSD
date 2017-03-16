@@ -21,13 +21,13 @@ class Relogio(Frame):
 		self.data = ''
 
 		# Defina as Labels do tempo, dia da semana e data
-		self.horaLB = Label(root, text= self.hora, font=(fonte, large_text_size), fg = 'white', bg = 'black')
+		self.horaLB = Label(self, text= self.hora, font=(fonte, large_text_size), fg = 'white', bg = 'black')
 		self.horaLB.pack(side = TOP, anchor = W)
 
-		self.dia_semanaLB = Label(root, text= self.dia_semana, font=(fonte, large_text_size), fg = 'white', bg = 'black')
+		self.dia_semanaLB = Label(self, text= self.dia_semana, font=(fonte, large_text_size), fg = 'white', bg = 'black')
 		self.dia_semanaLB.pack(side = TOP, anchor = W)
 
-		self.dataLB = Label(root, text= self.data, font=(fonte, large_text_size), fg = 'white', bg = 'black')
+		self.dataLB = Label(self, text= self.data, font=(fonte, large_text_size), fg = 'white', bg = 'black')
 		self.dataLB.pack(side = TOP, anchor = W)
 
 		# A propria classe Relogio chama o metodo Tick() quando eh inicializada
