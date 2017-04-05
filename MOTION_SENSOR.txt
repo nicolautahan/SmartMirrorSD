@@ -1,0 +1,12 @@
+from gpiozero import Motion Sensor
+import os
+import commands
+
+pir = MotionSensor(pin)
+
+while true
+	wait_for_motion()
+	os.system('xset -dysplay :0.0 dpms force on)
+	waito_for_no_motion()
+	delay(30sec)
+	os.system('xset -dysplay :0.0 dpms force off)
