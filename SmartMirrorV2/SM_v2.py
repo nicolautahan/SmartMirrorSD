@@ -204,8 +204,9 @@ class Titulo(Frame):
 class Screen_Builder():
 	def __init__(self):
 		self.root = Tk()	# Tela Principal
+		self.root.attributes("-fullscreen", True)
 
-		self.screen_full = False
+		self.screen_full = True
 		self.root.bind('<Return>', self.toggle_fullscreen)
 
 		# Variaveis para o feed
